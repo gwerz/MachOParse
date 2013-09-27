@@ -222,6 +222,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Sam Marshall";
 				TargetAttributes = {
+					22C1840F17F5093B00800C71 = {
+						DevelopmentTeam = 329DAD2G44;
+					};
 					22C1843017F5093C00800C71 = {
 						TestTargetID = 22C1840F17F5093B00800C71;
 					};
@@ -412,12 +415,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MachOParse/MachOParse-Prefix.pch";
 				INFOPLIST_FILE = "MachOParse/MachOParse-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -426,12 +432,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MachOParse/MachOParse-Prefix.pch";
 				INFOPLIST_FILE = "MachOParse/MachOParse-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -495,6 +504,7 @@
 				22C1844317F5093C00800C71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22C1844417F5093C00800C71 /* Build configuration list for PBXNativeTarget "MachOParseTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +513,7 @@
 				22C1844617F5093C00800C71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

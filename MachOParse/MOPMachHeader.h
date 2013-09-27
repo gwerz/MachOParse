@@ -20,5 +20,6 @@
 @property (nonatomic, readwrite) uint32_t reserved;
 
 - (instancetype)initWithMachHeader:(NSData *)headerData;
+- (NSString *)nameOfFileType;
 
 @end

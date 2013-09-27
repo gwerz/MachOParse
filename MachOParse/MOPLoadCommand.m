@@ -7,16 +7,13 @@
 //
 
 #import "MOPLoadCommand.h"
+#import <mach-o/loader.h>
 
 @implementation MOPLoadCommand
 
-- (instancetype)initWithCommand:(NSData *)data {
-	self = [super init];
-	if (self) {
-		
-	}
-	return self;
-}
+@synthesize cmdType = _cmdType;
+@synthesize cmdSize = _cmdSize;
+@synthesize cmdData = _cmdData;
 
 + (uint32_t)commandSize:(NSData *)data {
 	uint32_t size = 0;
@@ -24,7 +21,72 @@
 	return size;
 }
 
+- (instancetype)initWithCommand:(NSData *)data {
+	self = [super init];
+	if (self) {
+		_cmdData = [NSData dataWithData:data];
+		[_cmdData getBytes:&_cmdType range:NSMakeRange(0, sizeof(uint32_t))];
+		[_cmdData getBytes:&_cmdSize range:NSMakeRange(sizeof(uint32_t), sizeof(uint32_t))];
+	}
+	return self;
+}
+
+#ifndef MAC_OS_X_VERSION_10_9
+#define	LC_ENCRYPTION_INFO_64 	0x2C 	/* 64-bit encrypted segment information */
+#define LC_LINKER_OPTION 		0x2D	/* linker options in MH_OBJECT files */
+#endif
+
 - (id)generateCommandClass {
+	switch (_cmdType) {
+		case LC_SEGMENT:
+		case LC_SYMTAB:
+		case LC_SYMSEG:
+		case LC_THREAD:
+		case LC_UNIXTHREAD:
+		case LC_LOADFVMLIB:
+		case LC_IDFVMLIB:
+		case LC_IDENT:
+		case LC_FVMFILE:
+		case LC_PREPAGE:
+		case LC_DYSYMTAB:
+		case LC_LOAD_DYLIB:
+		case LC_ID_DYLIB:
+		case LC_LOAD_DYLINKER:
+		case LC_ID_DYLINKER:
+		case LC_PREBOUND_DYLIB:
+		case LC_ROUTINES:
+		case LC_SUB_FRAMEWORK:
+		case LC_SUB_UMBRELLA:
+		case LC_SUB_CLIENT:
+		case LC_SUB_LIBRARY:
+		case LC_TWOLEVEL_HINTS:
+		case LC_PREBIND_CKSUM:
+		case LC_LOAD_WEAK_DYLIB:
+		case LC_SEGMENT_64:
+		case LC_ROUTINES_64:
+		case LC_UUID:
+		case LC_RPATH:
+		case LC_CODE_SIGNATURE:
+		case LC_SEGMENT_SPLIT_INFO:
+		case LC_REEXPORT_DYLIB:
+		case LC_LAZY_LOAD_DYLIB:
+		case LC_ENCRYPTION_INFO:
+		case LC_DYLD_INFO:
+		case LC_DYLD_INFO_ONLY:
+		case LC_LOAD_UPWARD_DYLIB:
+		case LC_VERSION_MIN_MACOSX:
+		case LC_VERSION_MIN_IPHONEOS:
+		case LC_FUNCTION_STARTS:
+		case LC_DYLD_ENVIRONMENT:
+		case LC_MAIN:
+		case LC_DATA_IN_CODE:
+		case LC_SOURCE_VERSION:
+		case LC_DYLIB_CODE_SIGN_DRS:
+		case LC_ENCRYPTION_INFO_64:
+		case LC_LINKER_OPTION:
+		default:
+			break;
+	}
 	return nil;
 }
 
