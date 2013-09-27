@@ -14,10 +14,8 @@
 @property (nonatomic, readwrite) uint32_t cmdSize;
 @property (nonatomic, strong) NSData *cmdData;
 
-- (instancetype)initWithCommand:(NSData *)data;
-
 + (uint32_t)commandSize:(NSData *)data;
-
+- (instancetype)initWithCommand:(NSData *)data;
 - (id)generateCommandClass;
 
 @end

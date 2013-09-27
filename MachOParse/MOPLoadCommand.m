@@ -8,6 +8,7 @@
 
 #import "MOPLoadCommand.h"
 #import <mach-o/loader.h>
+#import "MOPLCHeader.h"
 
 @implementation MOPLoadCommand
 
@@ -37,12 +38,23 @@
 #endif
 
 - (id)generateCommandClass {
+	id command;
 	switch (_cmdType) {
 		case LC_SEGMENT:
+			command = [[MOPLCSegment alloc] init];
+			break;
 		case LC_SYMTAB:
+			command = [[MOPLCSymTab alloc] init];
+			break;
 		case LC_SYMSEG:
+			command = [[MOPLCSymSeg alloc] init];
+			break;
 		case LC_THREAD:
+			command = [[MOPLCThread alloc] init];
+			break;
 		case LC_UNIXTHREAD:
+			command = [[MOPLCUnixThread alloc] init];
+			break;
 		case LC_LOADFVMLIB:
 		case LC_IDFVMLIB:
 		case LC_IDENT:
@@ -84,10 +96,11 @@
 		case LC_DYLIB_CODE_SIGN_DRS:
 		case LC_ENCRYPTION_INFO_64:
 		case LC_LINKER_OPTION:
+		case LC_REQ_DYLD:
 		default:
 			break;
 	}
-	return nil;
+	return command;
 }
 
 @end

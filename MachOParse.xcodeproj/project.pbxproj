@@ -22,6 +22,11 @@
 		22C1844C17F50C7200800C71 /* MOPMachHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C1844B17F50C7200800C71 /* MOPMachHeader.m */; };
 		22C1845517F50CA900800C71 /* MOPLoadCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C1845417F50CA900800C71 /* MOPLoadCommand.m */; };
 		22C1845817F50CC500800C71 /* MOPMachArchitecture.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C1845717F50CC500800C71 /* MOPMachArchitecture.m */; };
+		22C184BB17F6525600800C71 /* MOPLCSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C184B217F6525600800C71 /* MOPLCSegment.m */; };
+		22C184BC17F6525600800C71 /* MOPLCSymSeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C184B417F6525600800C71 /* MOPLCSymSeg.m */; };
+		22C184BD17F6525600800C71 /* MOPLCSymTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C184B617F6525600800C71 /* MOPLCSymTab.m */; };
+		22C184BE17F6525600800C71 /* MOPLCThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C184B817F6525600800C71 /* MOPLCThread.m */; };
+		22C184BF17F6525600800C71 /* MOPLCUnixThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C184BA17F6525600800C71 /* MOPLCUnixThread.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +67,17 @@
 		22C1845417F50CA900800C71 /* MOPLoadCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPLoadCommand.m; sourceTree = "<group>"; };
 		22C1845617F50CC500800C71 /* MOPMachArchitecture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPMachArchitecture.h; sourceTree = "<group>"; };
 		22C1845717F50CC500800C71 /* MOPMachArchitecture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPMachArchitecture.m; sourceTree = "<group>"; };
+		22C184B017F6525600800C71 /* MOPLCHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPLCHeader.h; sourceTree = "<group>"; };
+		22C184B117F6525600800C71 /* MOPLCSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPLCSegment.h; sourceTree = "<group>"; };
+		22C184B217F6525600800C71 /* MOPLCSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPLCSegment.m; sourceTree = "<group>"; };
+		22C184B317F6525600800C71 /* MOPLCSymSeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPLCSymSeg.h; sourceTree = "<group>"; };
+		22C184B417F6525600800C71 /* MOPLCSymSeg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPLCSymSeg.m; sourceTree = "<group>"; };
+		22C184B517F6525600800C71 /* MOPLCSymTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPLCSymTab.h; sourceTree = "<group>"; };
+		22C184B617F6525600800C71 /* MOPLCSymTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPLCSymTab.m; sourceTree = "<group>"; };
+		22C184B717F6525600800C71 /* MOPLCThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPLCThread.h; sourceTree = "<group>"; };
+		22C184B817F6525600800C71 /* MOPLCThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPLCThread.m; sourceTree = "<group>"; };
+		22C184B917F6525600800C71 /* MOPLCUnixThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPLCUnixThread.h; sourceTree = "<group>"; };
+		22C184BA17F6525600800C71 /* MOPLCUnixThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPLCUnixThread.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +154,7 @@
 				22C1844B17F50C7200800C71 /* MOPMachHeader.m */,
 				22C1845317F50CA900800C71 /* MOPLoadCommand.h */,
 				22C1845417F50CA900800C71 /* MOPLoadCommand.m */,
+				22C1849F17F6503F00800C71 /* Commands */,
 				22C1845617F50CC500800C71 /* MOPMachArchitecture.h */,
 				22C1845717F50CC500800C71 /* MOPMachArchitecture.m */,
 			);
@@ -172,6 +189,24 @@
 				22C1843A17F5093C00800C71 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22C1849F17F6503F00800C71 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				22C184B017F6525600800C71 /* MOPLCHeader.h */,
+				22C184B117F6525600800C71 /* MOPLCSegment.h */,
+				22C184B217F6525600800C71 /* MOPLCSegment.m */,
+				22C184B317F6525600800C71 /* MOPLCSymSeg.h */,
+				22C184B417F6525600800C71 /* MOPLCSymSeg.m */,
+				22C184B517F6525600800C71 /* MOPLCSymTab.h */,
+				22C184B617F6525600800C71 /* MOPLCSymTab.m */,
+				22C184B717F6525600800C71 /* MOPLCThread.h */,
+				22C184B817F6525600800C71 /* MOPLCThread.m */,
+				22C184B917F6525600800C71 /* MOPLCUnixThread.h */,
+				22C184BA17F6525600800C71 /* MOPLCUnixThread.m */,
+			);
+			path = Commands;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,10 +312,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				22C1844C17F50C7200800C71 /* MOPMachHeader.m in Sources */,
+				22C184BF17F6525600800C71 /* MOPLCUnixThread.m in Sources */,
 				22C1845817F50CC500800C71 /* MOPMachArchitecture.m in Sources */,
 				22C1842017F5093C00800C71 /* main.m in Sources */,
+				22C184BC17F6525600800C71 /* MOPLCSymSeg.m in Sources */,
 				22C1842717F5093C00800C71 /* MOPAppDelegate.m in Sources */,
+				22C184BE17F6525600800C71 /* MOPLCThread.m in Sources */,
+				22C184BD17F6525600800C71 /* MOPLCSymTab.m in Sources */,
 				22C1844917F509BD00800C71 /* MOPBinaryFile.m in Sources */,
+				22C184BB17F6525600800C71 /* MOPLCSegment.m in Sources */,
 				22C1845517F50CA900800C71 /* MOPLoadCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

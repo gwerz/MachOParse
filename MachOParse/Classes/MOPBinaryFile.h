@@ -16,5 +16,6 @@
 
 - (instancetype)initWithFileURL:(NSURL *)fileURL;
 - (BOOL)isFat:(NSData *)data;
+- (uint32_t)architectureCount:(NSData *)data;
 
 @end
