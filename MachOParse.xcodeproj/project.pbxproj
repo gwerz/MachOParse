@@ -27,6 +27,24 @@
 		22C184BD17F6525600800C71 /* MOPLCSymTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C184B617F6525600800C71 /* MOPLCSymTab.m */; };
 		22C184BE17F6525600800C71 /* MOPLCThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C184B817F6525600800C71 /* MOPLCThread.m */; };
 		22C184BF17F6525600800C71 /* MOPLCUnixThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C184BA17F6525600800C71 /* MOPLCUnixThread.m */; };
+		22C184C217F6539000800C71 /* MOPLCLoadFVMLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C184C117F6539000800C71 /* MOPLCLoadFVMLib.m */; };
+		22C184C517F653BB00800C71 /* MOPLCIdFVMLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C184C417F653BB00800C71 /* MOPLCIdFVMLib.m */; };
+		22C184C817F653D500800C71 /* MOPLCIdent.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C184C717F653D500800C71 /* MOPLCIdent.m */; };
+		22C184CB17F653EF00800C71 /* MOPLCFVMFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C184CA17F653EF00800C71 /* MOPLCFVMFile.m */; };
+		22C184CE17F653FD00800C71 /* MOPLCPrePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C184CD17F653FD00800C71 /* MOPLCPrePage.m */; };
+		22C184D117F6543200800C71 /* MOPLCDySymTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C184D017F6543200800C71 /* MOPLCDySymTab.m */; };
+		22C184D417F6543F00800C71 /* MOPLCLoadDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C184D317F6543F00800C71 /* MOPLCLoadDylib.m */; };
+		22C184D717F6544A00800C71 /* MOPLCIdDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C184D617F6544A00800C71 /* MOPLCIdDylib.m */; };
+		22C184DA17F6546000800C71 /* MOPLCLoadDylinker.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C184D917F6546000800C71 /* MOPLCLoadDylinker.m */; };
+		22C184DD17F6546F00800C71 /* MOPLCIdDylinker.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C184DC17F6546F00800C71 /* MOPLCIdDylinker.m */; };
+		22C184E017F654C600800C71 /* MOPLCPreBoundDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C184DF17F654C600800C71 /* MOPLCPreBoundDylib.m */; };
+		22C184E317F654D100800C71 /* MOPLCRoutines.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C184E217F654D100800C71 /* MOPLCRoutines.m */; };
+		22C184E617F654E000800C71 /* MOPLCSubFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C184E517F654E000800C71 /* MOPLCSubFramework.m */; };
+		22C184E917F654EC00800C71 /* MOPLCSubUmbrella.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C184E817F654EC00800C71 /* MOPLCSubUmbrella.m */; };
+		22C184EC17F654FD00800C71 /* MOPLCSubClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C184EB17F654FD00800C71 /* MOPLCSubClient.m */; };
+		22C184EF17F6550B00800C71 /* MOPLCSubLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C184EE17F6550B00800C71 /* MOPLCSubLibrary.m */; };
+		22C184F217F6551F00800C71 /* MOPLCTwoLevelHints.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C184F117F6551F00800C71 /* MOPLCTwoLevelHints.m */; };
+		22C184F517F6552F00800C71 /* MOPLCPrebindChecksum.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C184F417F6552F00800C71 /* MOPLCPrebindChecksum.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +96,42 @@
 		22C184B817F6525600800C71 /* MOPLCThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPLCThread.m; sourceTree = "<group>"; };
 		22C184B917F6525600800C71 /* MOPLCUnixThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPLCUnixThread.h; sourceTree = "<group>"; };
 		22C184BA17F6525600800C71 /* MOPLCUnixThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPLCUnixThread.m; sourceTree = "<group>"; };
+		22C184C017F6539000800C71 /* MOPLCLoadFVMLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPLCLoadFVMLib.h; sourceTree = "<group>"; };
+		22C184C117F6539000800C71 /* MOPLCLoadFVMLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPLCLoadFVMLib.m; sourceTree = "<group>"; };
+		22C184C317F653BB00800C71 /* MOPLCIdFVMLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPLCIdFVMLib.h; sourceTree = "<group>"; };
+		22C184C417F653BB00800C71 /* MOPLCIdFVMLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPLCIdFVMLib.m; sourceTree = "<group>"; };
+		22C184C617F653D500800C71 /* MOPLCIdent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPLCIdent.h; sourceTree = "<group>"; };
+		22C184C717F653D500800C71 /* MOPLCIdent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPLCIdent.m; sourceTree = "<group>"; };
+		22C184C917F653EF00800C71 /* MOPLCFVMFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPLCFVMFile.h; sourceTree = "<group>"; };
+		22C184CA17F653EF00800C71 /* MOPLCFVMFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPLCFVMFile.m; sourceTree = "<group>"; };
+		22C184CC17F653FD00800C71 /* MOPLCPrePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPLCPrePage.h; sourceTree = "<group>"; };
+		22C184CD17F653FD00800C71 /* MOPLCPrePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPLCPrePage.m; sourceTree = "<group>"; };
+		22C184CF17F6543200800C71 /* MOPLCDySymTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPLCDySymTab.h; sourceTree = "<group>"; };
+		22C184D017F6543200800C71 /* MOPLCDySymTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPLCDySymTab.m; sourceTree = "<group>"; };
+		22C184D217F6543F00800C71 /* MOPLCLoadDylib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPLCLoadDylib.h; sourceTree = "<group>"; };
+		22C184D317F6543F00800C71 /* MOPLCLoadDylib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPLCLoadDylib.m; sourceTree = "<group>"; };
+		22C184D517F6544A00800C71 /* MOPLCIdDylib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPLCIdDylib.h; sourceTree = "<group>"; };
+		22C184D617F6544A00800C71 /* MOPLCIdDylib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPLCIdDylib.m; sourceTree = "<group>"; };
+		22C184D817F6546000800C71 /* MOPLCLoadDylinker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPLCLoadDylinker.h; sourceTree = "<group>"; };
+		22C184D917F6546000800C71 /* MOPLCLoadDylinker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPLCLoadDylinker.m; sourceTree = "<group>"; };
+		22C184DB17F6546F00800C71 /* MOPLCIdDylinker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPLCIdDylinker.h; sourceTree = "<group>"; };
+		22C184DC17F6546F00800C71 /* MOPLCIdDylinker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPLCIdDylinker.m; sourceTree = "<group>"; };
+		22C184DE17F654C600800C71 /* MOPLCPreBoundDylib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPLCPreBoundDylib.h; sourceTree = "<group>"; };
+		22C184DF17F654C600800C71 /* MOPLCPreBoundDylib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPLCPreBoundDylib.m; sourceTree = "<group>"; };
+		22C184E117F654D100800C71 /* MOPLCRoutines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPLCRoutines.h; sourceTree = "<group>"; };
+		22C184E217F654D100800C71 /* MOPLCRoutines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPLCRoutines.m; sourceTree = "<group>"; };
+		22C184E417F654E000800C71 /* MOPLCSubFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPLCSubFramework.h; sourceTree = "<group>"; };
+		22C184E517F654E000800C71 /* MOPLCSubFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPLCSubFramework.m; sourceTree = "<group>"; };
+		22C184E717F654EC00800C71 /* MOPLCSubUmbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPLCSubUmbrella.h; sourceTree = "<group>"; };
+		22C184E817F654EC00800C71 /* MOPLCSubUmbrella.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPLCSubUmbrella.m; sourceTree = "<group>"; };
+		22C184EA17F654FD00800C71 /* MOPLCSubClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPLCSubClient.h; sourceTree = "<group>"; };
+		22C184EB17F654FD00800C71 /* MOPLCSubClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPLCSubClient.m; sourceTree = "<group>"; };
+		22C184ED17F6550B00800C71 /* MOPLCSubLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPLCSubLibrary.h; sourceTree = "<group>"; };
+		22C184EE17F6550B00800C71 /* MOPLCSubLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPLCSubLibrary.m; sourceTree = "<group>"; };
+		22C184F017F6551F00800C71 /* MOPLCTwoLevelHints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPLCTwoLevelHints.h; sourceTree = "<group>"; };
+		22C184F117F6551F00800C71 /* MOPLCTwoLevelHints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPLCTwoLevelHints.m; sourceTree = "<group>"; };
+		22C184F317F6552F00800C71 /* MOPLCPrebindChecksum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPLCPrebindChecksum.h; sourceTree = "<group>"; };
+		22C184F417F6552F00800C71 /* MOPLCPrebindChecksum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPLCPrebindChecksum.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +259,42 @@
 				22C184B817F6525600800C71 /* MOPLCThread.m */,
 				22C184B917F6525600800C71 /* MOPLCUnixThread.h */,
 				22C184BA17F6525600800C71 /* MOPLCUnixThread.m */,
+				22C184C017F6539000800C71 /* MOPLCLoadFVMLib.h */,
+				22C184C117F6539000800C71 /* MOPLCLoadFVMLib.m */,
+				22C184C317F653BB00800C71 /* MOPLCIdFVMLib.h */,
+				22C184C417F653BB00800C71 /* MOPLCIdFVMLib.m */,
+				22C184C617F653D500800C71 /* MOPLCIdent.h */,
+				22C184C717F653D500800C71 /* MOPLCIdent.m */,
+				22C184C917F653EF00800C71 /* MOPLCFVMFile.h */,
+				22C184CA17F653EF00800C71 /* MOPLCFVMFile.m */,
+				22C184CC17F653FD00800C71 /* MOPLCPrePage.h */,
+				22C184CD17F653FD00800C71 /* MOPLCPrePage.m */,
+				22C184CF17F6543200800C71 /* MOPLCDySymTab.h */,
+				22C184D017F6543200800C71 /* MOPLCDySymTab.m */,
+				22C184D217F6543F00800C71 /* MOPLCLoadDylib.h */,
+				22C184D317F6543F00800C71 /* MOPLCLoadDylib.m */,
+				22C184D517F6544A00800C71 /* MOPLCIdDylib.h */,
+				22C184D617F6544A00800C71 /* MOPLCIdDylib.m */,
+				22C184D817F6546000800C71 /* MOPLCLoadDylinker.h */,
+				22C184D917F6546000800C71 /* MOPLCLoadDylinker.m */,
+				22C184DB17F6546F00800C71 /* MOPLCIdDylinker.h */,
+				22C184DC17F6546F00800C71 /* MOPLCIdDylinker.m */,
+				22C184DE17F654C600800C71 /* MOPLCPreBoundDylib.h */,
+				22C184DF17F654C600800C71 /* MOPLCPreBoundDylib.m */,
+				22C184E117F654D100800C71 /* MOPLCRoutines.h */,
+				22C184E217F654D100800C71 /* MOPLCRoutines.m */,
+				22C184E417F654E000800C71 /* MOPLCSubFramework.h */,
+				22C184E517F654E000800C71 /* MOPLCSubFramework.m */,
+				22C184E717F654EC00800C71 /* MOPLCSubUmbrella.h */,
+				22C184E817F654EC00800C71 /* MOPLCSubUmbrella.m */,
+				22C184EA17F654FD00800C71 /* MOPLCSubClient.h */,
+				22C184EB17F654FD00800C71 /* MOPLCSubClient.m */,
+				22C184ED17F6550B00800C71 /* MOPLCSubLibrary.h */,
+				22C184EE17F6550B00800C71 /* MOPLCSubLibrary.m */,
+				22C184F017F6551F00800C71 /* MOPLCTwoLevelHints.h */,
+				22C184F117F6551F00800C71 /* MOPLCTwoLevelHints.m */,
+				22C184F317F6552F00800C71 /* MOPLCPrebindChecksum.h */,
+				22C184F417F6552F00800C71 /* MOPLCPrebindChecksum.m */,
 			);
 			path = Commands;
 			sourceTree = "<group>";
@@ -311,17 +401,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C184D717F6544A00800C71 /* MOPLCIdDylib.m in Sources */,
 				22C1844C17F50C7200800C71 /* MOPMachHeader.m in Sources */,
 				22C184BF17F6525600800C71 /* MOPLCUnixThread.m in Sources */,
+				22C184D117F6543200800C71 /* MOPLCDySymTab.m in Sources */,
+				22C184F517F6552F00800C71 /* MOPLCPrebindChecksum.m in Sources */,
 				22C1845817F50CC500800C71 /* MOPMachArchitecture.m in Sources */,
+				22C184DD17F6546F00800C71 /* MOPLCIdDylinker.m in Sources */,
 				22C1842017F5093C00800C71 /* main.m in Sources */,
+				22C184E017F654C600800C71 /* MOPLCPreBoundDylib.m in Sources */,
+				22C184C517F653BB00800C71 /* MOPLCIdFVMLib.m in Sources */,
+				22C184E617F654E000800C71 /* MOPLCSubFramework.m in Sources */,
 				22C184BC17F6525600800C71 /* MOPLCSymSeg.m in Sources */,
 				22C1842717F5093C00800C71 /* MOPAppDelegate.m in Sources */,
 				22C184BE17F6525600800C71 /* MOPLCThread.m in Sources */,
+				22C184CE17F653FD00800C71 /* MOPLCPrePage.m in Sources */,
+				22C184E317F654D100800C71 /* MOPLCRoutines.m in Sources */,
+				22C184EC17F654FD00800C71 /* MOPLCSubClient.m in Sources */,
 				22C184BD17F6525600800C71 /* MOPLCSymTab.m in Sources */,
 				22C1844917F509BD00800C71 /* MOPBinaryFile.m in Sources */,
+				22C184F217F6551F00800C71 /* MOPLCTwoLevelHints.m in Sources */,
+				22C184C817F653D500800C71 /* MOPLCIdent.m in Sources */,
+				22C184E917F654EC00800C71 /* MOPLCSubUmbrella.m in Sources */,
 				22C184BB17F6525600800C71 /* MOPLCSegment.m in Sources */,
+				22C184EF17F6550B00800C71 /* MOPLCSubLibrary.m in Sources */,
+				22C184DA17F6546000800C71 /* MOPLCLoadDylinker.m in Sources */,
+				22C184D417F6543F00800C71 /* MOPLCLoadDylib.m in Sources */,
 				22C1845517F50CA900800C71 /* MOPLoadCommand.m in Sources */,
+				22C184CB17F653EF00800C71 /* MOPLCFVMFile.m in Sources */,
+				22C184C217F6539000800C71 /* MOPLCLoadFVMLib.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

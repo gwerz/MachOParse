@@ -56,23 +56,59 @@
 			command = [[MOPLCUnixThread alloc] init];
 			break;
 		case LC_LOADFVMLIB:
+			command = [[MOPLCLoadFVMLib alloc] init];
+			break;
 		case LC_IDFVMLIB:
+			command = [[MOPLCIdFVMLib alloc] init];
+			break;
 		case LC_IDENT:
+			command = [[MOPLCIdent alloc] init];
+			break;
 		case LC_FVMFILE:
+			command = [[MOPLCFVMFile alloc] init];
+			break;
 		case LC_PREPAGE:
+			command = [[MOPLCPrePage alloc] init];
+			break;
 		case LC_DYSYMTAB:
+			command = [[MOPLCDySymTab alloc] init];
+			break;
 		case LC_LOAD_DYLIB:
+			command = [[MOPLCLoadDylib alloc] init];
+			break;
 		case LC_ID_DYLIB:
+			command = [[MOPLCIdDylib alloc] init];
+			break;
 		case LC_LOAD_DYLINKER:
+			command = [[MOPLCLoadDylinker alloc] init];
+			break;
 		case LC_ID_DYLINKER:
+			command = [[MOPLCIdDylinker alloc] init];
+			break;
 		case LC_PREBOUND_DYLIB:
+			command = [[MOPLCPreBoundDylib alloc] init];
+			break;
 		case LC_ROUTINES:
+			command = [[MOPLCRoutines alloc] init];
+			break;
 		case LC_SUB_FRAMEWORK:
+			command = [[MOPLCSubFramework alloc] init];
+			break;
 		case LC_SUB_UMBRELLA:
+			command = [[MOPLCSubUmbrella alloc] init];
+			break;
 		case LC_SUB_CLIENT:
+			command = [[MOPLCSubClient alloc] init];
+			break;
 		case LC_SUB_LIBRARY:
+			command = [[MOPLCSubLibrary alloc] init];
+			break;
 		case LC_TWOLEVEL_HINTS:
+			command = [[MOPLCTwoLevelHints alloc] init];
+			break;
 		case LC_PREBIND_CKSUM:
+			command = [[MOPLCPrebindChecksum alloc] init];
+			break;
 		case LC_LOAD_WEAK_DYLIB:
 		case LC_SEGMENT_64:
 		case LC_ROUTINES_64:
