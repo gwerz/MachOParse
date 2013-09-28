@@ -31,7 +31,7 @@
 		[headerData getBytes:&_sizeOfCmds range:NSMakeRange(sizeof(uint32_t)+sizeof(cpu_type_t)+sizeof(cpu_subtype_t)+sizeof(uint32_t)+sizeof(uint32_t), sizeof(uint32_t))];
 		[headerData getBytes:&_flags range:NSMakeRange(sizeof(uint32_t)+sizeof(cpu_type_t)+sizeof(cpu_subtype_t)+sizeof(uint32_t)+sizeof(uint32_t)+sizeof(uint32_t), sizeof(uint32_t))];
 		if (_magic == 0xfeedfacf || _magic == 0xcffaedfe)
-			[headerData getBytes:&_reserved range:NSMakeRange(sizeof(uint32_t)+sizeof(cpu_type_t)+sizeof(cpu_subtype_t)+sizeof(uint32_t)+sizeof(uint32_t)+sizeof(uint32_t)+sizeof(uint32_t), sizeof(uint32_t))];
+			[headerData getBytes:&_reserved range:NSMakeRange(sizeof(struct mach_header), sizeof(uint32_t))];
 	}
 	return self;
 }
@@ -46,7 +46,7 @@
 			name = @"Executable";
 			break;
 		case MH_FVMLIB:
-			name = @"VM Shared Library";
+			name = @"Fixed VM Shared Library";
 			break;
 		case MH_CORE:
 			name = @"Core";
