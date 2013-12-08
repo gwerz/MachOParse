@@ -30,7 +30,7 @@
 		[headerData getBytes:&_ncmds range:NSMakeRange(sizeof(uint32_t)+sizeof(cpu_type_t)+sizeof(cpu_subtype_t)+sizeof(uint32_t), sizeof(uint32_t))];
 		[headerData getBytes:&_sizeOfCmds range:NSMakeRange(sizeof(uint32_t)+sizeof(cpu_type_t)+sizeof(cpu_subtype_t)+sizeof(uint32_t)+sizeof(uint32_t), sizeof(uint32_t))];
 		[headerData getBytes:&_flags range:NSMakeRange(sizeof(uint32_t)+sizeof(cpu_type_t)+sizeof(cpu_subtype_t)+sizeof(uint32_t)+sizeof(uint32_t)+sizeof(uint32_t), sizeof(uint32_t))];
-		if (_magic == 0xfeedfacf || _magic == 0xcffaedfe)
+		if (_magic == MH_MAGIC_64 || _magic == MH_CIGAM_64)
 			[headerData getBytes:&_reserved range:NSMakeRange(sizeof(struct mach_header), sizeof(uint32_t))];
 	}
 	return self;
